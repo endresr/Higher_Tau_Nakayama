@@ -1,5 +1,6 @@
 let selectedPath = []; // Store the sequence of selected edges
 
+
 function createGraph(d,l) {
     const graph = {
       nodes: [],
@@ -664,7 +665,8 @@ function updateTorsionClass() {
     
     const d = parseInt(document.getElementById("constructTaudPair_d").value);
     const l = parseInt(document.getElementById("constructTaudPair_l").value);
-    
+
+    torsionModules = []; // Clear previous torsion modules
 
    // Process each node in the path
    selectedPath.forEach((edge, index) => {
